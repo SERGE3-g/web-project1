@@ -17,5 +17,10 @@ export const navigation = [
         path: '/tasks'
       }
     ]
+  },
+  {
+    text: 'Treelist',
+    path: '/pages/treelist',
+    icon: 'folder'
   }
 ];

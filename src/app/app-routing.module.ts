@@ -6,8 +6,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+import { TreelistComponent } from './pages/treelist/treelist.component';
 
 const routes: Routes = [
+  {
+    path: 'pages/treelist',
+    component: TreelistComponent,
+    canActivate: [ AuthGuardService ]
+  },
   {
     path: 'tasks',
     component: TasksComponent,
@@ -56,7 +62,8 @@ const routes: Routes = [
   declarations: [
     HomeComponent,
     ProfileComponent,
-    TasksComponent
+    TasksComponent,
+    TreelistComponent
   ]
 })
 export class AppRoutingModule { }
