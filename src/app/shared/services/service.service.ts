@@ -1,39 +1,39 @@
 import { Injectable } from '@angular/core';
 
 export class Task {
-  Task_ID: number;
+  Task_ID: number | undefined;
 
-  Task_Parent_ID: number;
+  Task_Parent_ID: number | undefined;
 
-  Task_Assigned_Employee_ID: number;
+  Task_Assigned_Employee_ID: number | undefined;
 
-  Task_Completion: number;
+  Task_Completion: number | undefined;
 
-  Task_Priority: number;
+  Task_Priority: number | undefined;
 
-  Task_Status: string;
+  Task_Status: string | undefined;
 
-  Task_Subject: string;
+  Task_Subject: string | undefined;
 
-  Task_Start_Date: string;
+  Task_Start_Date: string | undefined;
 
-  Task_Due_Date: string;
+  Task_Due_Date: string | undefined;
 
   Task_Assigned_Employee?: Employee;
 }
 
 export class Employee {
-  ID: number;
+  ID: number | undefined;
 
-  Name: string;
+  Name: string | undefined;
 
-  Picture: string;
+  Picture: string | undefined;
 }
 
 export class Priority {
-  id: number;
+  id: number | undefined;
 
-  value: string;
+  value: string | undefined;
 }
 
 const tasks: Task[] = [{
